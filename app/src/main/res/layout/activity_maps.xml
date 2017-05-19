@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.nhat.project.HomeActivity"
+    tools:showIn="@layout/app_bar_home">
+
+    <Spinner
+        android:id="@+id/spCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dialog"/>
+
+    <Spinner
+        android:id="@+id/spDistrict"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/spCity"
+        android:layout_marginStart="50dp"/>
+
+    <ImageView
+        android:id="@+id/imPhoto"
+        android:src="@drawable/ic_menu_camera"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/spCity"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/edtWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imPhoto"
+        android:layout_alignTop="@id/imPhoto"
+        android:layout_marginStart="20dp"
+        android:hint="Weight"/>
+
+    <EditText
+        android:id="@+id/edtPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imPhoto"
+        android:layout_below="@id/edtWeight"
+        android:layout_marginStart="20dp"
+        android:hint="Phonenumber"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btnAccept"
+        app:srcCompat="@android:drawable/ic_media_ff"/>
+
+
+    <include
+        layout="@layout/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/imPhoto"
+        />
+</RelativeLayout>

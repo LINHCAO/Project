@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string-array name="city_arr">
+        <item>Select City</item>
+        <item>Hồ Chí Minh</item>
+        <item>Hà Nội</item>
+    </string-array>
+
+    <string-array name="district_arr">
+        <item>Select District</item>
+        <item>Quận 1</item>
+        <item>Quận 2</item>
+        <item>Quận 3</item>
+        <item>Quận 7</item>
+        <item>Quận 8</item>
+        <item>Quận 9</item>
+        <item>Quận Thủ Đức</item>
+        <item>Quận Bình Thạnh</item>
+    </string-array>
+</resources>
